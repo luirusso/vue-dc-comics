@@ -17,7 +17,7 @@
 
 <script>
 export default {
-    name: 'div',
+    name: 'Header',
     data(){
         return{
             navLinks: [
@@ -59,7 +59,7 @@ export default {
 
 <style lang="scss">
 header {
-    height: 130px;
+    height: 110px;
     font-size: 12px;
 
     div {

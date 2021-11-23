@@ -1,0 +1,187 @@
+<template>
+  <footer>
+      <div class="container">
+          <div class="footer-links">
+              <div class="links">
+                
+                <div>
+                    <ul>
+                        <li>
+                            <h2>DC COMICS</h2>
+                        </li>
+                        <li v-for="link in dcComicsLinks" :key="link">
+                            <a href=""> {{ link.text }} </a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <h2>SHOP</h2>
+                        </li>
+                        <li v-for="link in shopLinks" :key="link">
+                            <a href=""> {{ link.text }} </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul>
+                    <li>
+                        <h2>DC</h2>
+                    </li>
+                    <li v-for="link in dcLinks" :key="link">
+                        <a href=""> {{ link.text }} </a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <h2>SITES</h2>
+                    </li>
+                    <li v-for="link in dcSitesLinks" :key="link">
+                        <a href=""> {{ link.text }} </a>
+                    </li>
+                </ul>
+              </div>
+              <div class="dc-logo-bg">
+                  <!-- <img src="../assets/dc-logo-bg.png" alt=""> -->
+              </div>
+          </div>
+      </div>
+  </footer>
+</template>
+
+<script>
+export default {
+    name: 'Footer',
+    data() {
+        return{
+            dcComicsLinks: [
+                {
+                    text: 'Characters'
+                },
+                {
+                    text: 'Comics'
+                },
+                {
+                    text: 'Movies'
+                },
+                {
+                    text: 'TV'
+                },
+                {
+                    text: 'Games'
+                },
+                {
+                    text: 'Videos'
+                },
+                {
+                    text: 'News'
+                },
+            ],
+            shopLinks: [
+                {
+                    text: 'Shop DC'
+                },
+                {
+                    text: 'Shop DC Collectibles'
+                },
+            ],
+            dcLinks: [
+                {
+                    text: 'Terms Of Use'
+                },
+                {
+                    text: 'Privacy policy (New)'
+                },
+                {
+                    text: 'Ad Choices'
+                },
+                {
+                    text: 'Advertising'
+                },
+                {
+                    text: 'Jobs'
+                },
+                {
+                    text: 'Subscriptions'
+                },
+                {
+                    text: 'Talent Workshops'
+                },
+                {
+                    text: 'CPSC Certificates'
+                },
+                {
+                    text: 'Ratings'
+                },
+                {
+                    text: 'Shop Help'
+                },
+                {
+                    text: 'Contact Us'
+                },
+            ],
+            dcSitesLinks: [
+                {
+                    text: 'DC'
+                },
+                {
+                    text: 'MAD Magazine'
+                },
+                {
+                    text: 'DC Kids'
+                },
+                {
+                    text: 'DC Universe'
+                },
+                {
+                    text: 'DC Power Visa'
+                },
+            ],
+        }
+    }
+
+}
+</script>
+
+<style lang="scss">
+footer {
+    background-image: url(../assets/footer-bg.jpg);
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+
+    a {
+        color: lightgray;
+    }
+
+    ul {
+        list-style: none;
+        padding: 1rem 1rem;
+
+        li {
+            font-size: 12px;
+            padding-bottom: 5px;
+        }
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+
+        .links {
+            display: flex;
+        }
+
+        h2 {
+            padding: 1rem 0;
+        }
+    }
+
+    .dc-logo-bg {
+        background-image: url(../assets/dc-logo-bg.png);
+    }
+
+}
+
+</style>
