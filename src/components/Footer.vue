@@ -149,7 +149,6 @@ footer {
     background-image: url(../assets/footer-bg.jpg);
     background-size: cover;
     color: white;
-    overflow: hidden;
 
     a {
         color: lightgray;
@@ -157,7 +156,7 @@ footer {
 
     ul {
         list-style: none;
-        padding: 1rem 1rem;
+        padding: 0 1rem;
 
         li {
             font-size: 12px;
@@ -179,7 +178,11 @@ footer {
     }
 
     .dc-logo-bg {
-        background-image: url(../assets/dc-logo-bg.png);
+        background-image: url(/img/dc-logo-bg.f4404ce9.png);
+        background-repeat: no-repeat;
+        background-position-y: -111px;
+        width: 100%;
+        background-position-x: right;
     }
 
 }

@@ -5,9 +5,8 @@
 
     <Main />
     
-    <footer>
-      <Footer />
-    </footer>
+    <Footer />
+    
 
   </div>
 </template>
