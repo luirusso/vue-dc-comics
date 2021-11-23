@@ -1,8 +1,9 @@
 <template>
   <footer>
-      <div class="container">
-          <div class="footer-links">
-              <div class="links">
+      
+    <div class="footer-links">
+        <div class="container">
+            <div class="links">
                 
                 <div>
                     <ul>
@@ -41,12 +42,33 @@
                         <a href=""> {{ link.text }} </a>
                     </li>
                 </ul>
-              </div>
-              <div class="dc-logo-bg">
-                  <!-- <img src="../assets/dc-logo-bg.png" alt=""> -->
-              </div>
-          </div>
-      </div>
+            </div>
+            <div class="dc-logo-bg">
+                    
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container bottom">
+            <div class="sign-up">
+                <div>
+                    <button>
+                        SIGN UP
+                    </button>
+                </div>
+                <div class="follow-us">
+                    <h2>
+                        FOLLOW US
+                    </h2>
+                    <img src="../assets/footer-facebook.png" alt="">
+                    <img src="../assets/footer-facebook.png" alt="">
+                    <img src="../assets/footer-facebook.png" alt="">
+                    <img src="../assets/footer-facebook.png" alt="">
+                    <img src="../assets/footer-facebook.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
   </footer>
 </template>
 
@@ -146,9 +168,7 @@ export default {
 
 <style lang="scss">
 footer {
-    background-image: url(../assets/footer-bg.jpg);
-    background-size: cover;
-    color: white;
+
 
     a {
         color: lightgray;
@@ -165,11 +185,18 @@ footer {
     }
 
     .footer-links {
-        display: flex;
-        justify-content: space-between;
+        background-image: url(../assets/footer-bg.jpg);
+        background-size: cover;
+        color: white;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
 
         .links {
             display: flex;
+            padding: 2rem 0;
         }
 
         h2 {
@@ -180,11 +207,32 @@ footer {
     .dc-logo-bg {
         background-image: url(/img/dc-logo-bg.f4404ce9.png);
         background-repeat: no-repeat;
-        background-position-y: -111px;
+        background-position-y: -83px;
         width: 100%;
         background-position-x: right;
     }
 
+    .footer-bottom {
+        height: 120px;
+        background-color: #303030;
+
+        .container.bottom {
+            height: 120px;
+        }
+
+            
+        .sign-up {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            align-items: center;
+        }
+
+        .follow-us {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }
 
 </style>
