@@ -61,10 +61,10 @@
                         FOLLOW US
                     </h2>
                     <img src="../assets/footer-facebook.png" alt="">
-                    <img src="../assets/footer-facebook.png" alt="">
-                    <img src="../assets/footer-facebook.png" alt="">
-                    <img src="../assets/footer-facebook.png" alt="">
-                    <img src="../assets/footer-facebook.png" alt="">
+                    <img src="../assets/footer-twitter.png" alt="">
+                    <img src="../assets/footer-youtube.png" alt="">
+                    <img src="../assets/footer-pinterest.png" alt="">
+                    <img src="../assets/footer-periscope.png" alt="">
                 </div>
             </div>
         </div>
@@ -226,11 +226,48 @@ footer {
             justify-content: space-between;
             height: 100%;
             align-items: center;
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                width: 170px;
+                border: 2px solid #0282F9;
+                background: transparent;
+                color: white;
+                font-size: 30px;
+                transition: background 0.3s;
+                transition: box-shadow 0.3s;
+                &:hover {
+                    cursor: pointer;
+                    background: #0282F9;
+                    color: #303030;
+                    box-shadow: 3px 3px 7px 0px black;
+                    
+                }
+            }
         }
 
         .follow-us {
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            h2 {
+                padding: 0 1.3rem;
+                color: #0282F9;
+                font-size: 1.7rem;
+            }
+
+            img {
+                margin: 0 0.5rem;
+                opacity: 0.5;
+                transition: opacity .3s;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 1;
+                }
+            }
         }
     }
 }
