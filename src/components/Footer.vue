@@ -179,7 +179,7 @@ footer {
         padding: 0 1rem;
 
         li {
-            font-size: 12px;
+            font-size: 17px;
             padding-bottom: 5px;
         }
     }

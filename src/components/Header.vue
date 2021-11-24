@@ -60,7 +60,7 @@ export default {
 <style lang="scss">
 header {
     height: 110px;
-    font-size: 12px;
+    font-size: 18px;
 
     div {
         height: 100%;
@@ -85,7 +85,7 @@ header {
     }
 
     img {
-        max-width: 80%;
+        max-width: 82px;
     }
 
     ul {
