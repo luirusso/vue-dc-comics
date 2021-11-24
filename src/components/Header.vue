@@ -6,7 +6,7 @@
         </div>
         <div>
           <ul>
-            <li v-for="link in navLinks" :key="link">
+            <li v-for="(link, index) in navLinks" :key="`navLink-${index}`">
                 <a href=""><strong> {{ link.link }} </strong></a>
             </li>
           </ul>

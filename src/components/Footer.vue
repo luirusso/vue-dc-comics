@@ -10,7 +10,7 @@
                         <li>
                             <h2>DC COMICS</h2>
                         </li>
-                        <li v-for="link in dcComicsLinks" :key="link">
+                        <li v-for="(link, index) in dcComicsLinks" :key="`dcComicsLink-${index}`">
                             <a href=""> {{ link.text }} </a>
                         </li>
                     </ul>
@@ -19,7 +19,7 @@
                         <li>
                             <h2>SHOP</h2>
                         </li>
-                        <li v-for="link in shopLinks" :key="link">
+                        <li v-for="(link, index) in shopLinks" :key="`shopLink-${index}`">
                             <a href=""> {{ link.text }} </a>
                         </li>
                     </ul>
@@ -29,7 +29,7 @@
                     <li>
                         <h2>DC</h2>
                     </li>
-                    <li v-for="link in dcLinks" :key="link">
+                    <li v-for="(link, index) in dcLinks" :key="`dcLink-${index}`">
                         <a href=""> {{ link.text }} </a>
                     </li>
                 </ul>
@@ -38,7 +38,7 @@
                     <li>
                         <h2>SITES</h2>
                     </li>
-                    <li v-for="link in dcSitesLinks" :key="link">
+                    <li v-for="(link, index) in dcSitesLinks" :key="`dcSitesLink-${index}`">
                         <a href=""> {{ link.text }} </a>
                     </li>
                 </ul>
