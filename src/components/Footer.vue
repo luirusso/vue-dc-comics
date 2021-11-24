@@ -205,7 +205,7 @@ footer {
     }
 
     .dc-logo-bg {
-        background-image: url(/img/dc-logo-bg.f4404ce9.png);
+        background-image: url(../assets/dc-logo-bg.png);
         background-repeat: no-repeat;
         background-position-y: -83px;
         width: 100%;
