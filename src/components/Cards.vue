@@ -18,17 +18,19 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .card {
     max-height: 190px;
     overflow: hidden;
     img {
         display: block;
         width: 100%;
+        cursor: pointer;
     }
 }
 
 h2 {
     padding: 1.5rem 0;
+    cursor: pointer;
 }
 </style>

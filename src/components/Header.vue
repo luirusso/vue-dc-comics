@@ -57,7 +57,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 header {
     height: 110px;
     font-size: 18px;

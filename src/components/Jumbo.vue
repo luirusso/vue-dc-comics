@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .jumbotron {
     height: 400px;
     background-image: url(../assets/jumbotron.jpg);
